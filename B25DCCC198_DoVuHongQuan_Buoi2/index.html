@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="dieuhuong-chinh">
+        <ul>
+          <li><span class="logo">Đỗ Vũ Hồng Quân</span></li>
+          <li><a href="#gioithieu">Giới thiệu</a></li>
+          <li><a href="#kynang">Danh sách kỹ năng</a></li>
+          <li><a href="#duan">Danh sách dự án</a></li>
+          <li><a href="#lienhe">Liên hệ</a></li>
+          <button id="darkModeBtn" title="Chế độ tối">🌙</button>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="gioithieu" class="gioithieu">
+      <div class="anh-gioithieu">
+        <img
+          src="images/124657728_378712203404261_6099790393662608407_n.jpg"
+          alt="Ảnh đại diện"
+        />
+      </div>
+
+      <div class="noidung-gioithieu">
+        <h1>Xin chào, tôi là Đỗ Vũ Hồng Quân</h1>
+
+        <h3>Sinh viên ngành Công nghệ thông tin</h3>
+
+        <p>
+          Mình đang học và tìm hiểu về lập trình web với HTML, CSS, JavaScript.
+          Mục tiêu của mình là xây dựng những website đẹp, dễ sử dụng và có tính
+          tương tác cao.
+        </p>
+
+        <div class="thongtin-gioithieu">
+          <p>
+            <strong>Trường: </strong>Học viện Công nghệ Bưu chính Viễn thông
+          </p>
+          <p><strong>Địa chỉ: </strong>Hà Nội</p>
+          <p><strong>Email: </strong>quandvh.ptit@gmail.com</p>
+        </div>
+
+        <div class="nut-gioithieu">
+          <a href="#kynang">Xem kỹ năng</a>
+          <a href="#duan">Xem dự án</a>
+          <a href="#lienhe">Liên hệ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kynang" class="kynang">
+      <h2>Kỹ năng của tôi</h2>
+
+      <div class="noidung-kynang">
+        <div class="the-kynang">
+          <h3>HTML</h3>
+        </div>
+
+        <div class="the-kynang">
+          <h3>CSS</h3>
+        </div>
+
+        <div class="the-kynang">
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="the-kynang">
+          <h3>Python</h3>
+        </div>
+
+        <div class="the-kynang">
+          <h3>MySQL</h3>
+        </div>
+
+        <div class="the-kynang">
+          <h3>Git & GitHub</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="duan" class="duan">
+      <h2>Dự án của tôi</h2>
+
+      <div class="noidung-duan">
+        <div class="the-duan">
+          <img
+            src="images/Screenshot 2026-09-16 102137.png"
+            alt="Website bán game"
+          />
+          <h3>Website bán game Gamecuatui.vn</h3>
+          <p>Website bán game bản quyền bằng HTML, CSS và JavaScript.</p>
+          <a href="#">Xem chi tiết</a>
+        </div>
+
+        <div class="the-duan">
+          <img
+            src="images/Screenshot 2026-09-16 101745.png"
+            alt="Quản lý khách hàng"
+          />
+          <h3>Quản lý khách hàng</h3>
+          <p>Thiết kế cơ sở dữ liệu MySQL và giao diện quản lý.</p>
+          <a href="#">Xem chi tiết</a>
+        </div>
+
+        <div class="the-duan">
+          <img src="images/Screenshot 2026-09-16 103538.png" alt="Redmi" />
+          <h3>Giới thiệu điện thoại Redmi</h3>
+          <p>Trang giới thiệu sản phẩm bằng HTML và CSS.</p>
+          <a href="#">Xem chi tiết</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="lienhe" class="lienhe">
+      <div class="noidung-lienhe">
+        <h2>Liên hệ với tôi</h2>
+        <p class="mo-ta">
+          Tôi rất mong nhận được phản hồi từ bạn. Vui lòng điền thông tin vào
+          mẫu dưới đây để kết nối với tôi.
+        </p>
+
+        <div class="gui-lienhe">
+          <form action="/submit" method="post">
+            <div class="form-group">
+              <label for="name">Họ và tên<span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ví dụ: Nguyễn Văn An"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email<span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ví dụ: an.nguyen@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="tel">Số điện thoại</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Ví dụ: 0123456789"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject"
+                >Tiêu đề<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Ví dụ: Hợp tác dự án"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >Nội dung tin nhắn<span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Nhập tin nhắn của bạn tại đây..."
+                required
+              ></textarea>
+              <p id="charCount">0 ký tự</p>
+            </div>
+
+            <button type="submit" class="nut-gui">Gửi tin nhắn</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

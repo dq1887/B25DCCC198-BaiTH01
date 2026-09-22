@@ -1,0 +1,378 @@
+.header {
+  background-color: #2563eb; /* Màu xanh */
+  padding: 15px 40px;
+  position: sticky; /* Luôn nằm trên cùng khi cuộn */
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.dieuhuong-chinh ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dieuhuong-chinh li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dieuhuong-chinh li:not(:first-child) a:hover {
+  background-color: white;
+  color: #2563eb;
+}
+
+.gioithieu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  padding: 70px 10%;
+}
+
+.anh-gioithieu img {
+  width: 250px;
+  height: 250px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+
+  /* border: 5px solid #2563eb; */
+}
+
+.noidung-gioithieu {
+  max-width: 600px;
+}
+
+.noidung-gioithieu h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.noidung-gioithieu h3 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.noidung-gioithieu p {
+  line-height: 1.6;
+}
+
+.nut-gioithieu {
+  margin-top: 25px;
+}
+
+.nut-gioithieu a {
+  text-decoration: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  margin-right: 15px;
+
+  transition: 0.3s;
+}
+
+.nut-gioithieu a {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.nut-gioithieu a:hover {
+  transform: translateY(-3px);
+  background-color: #2563eb;
+  color: white;
+}
+
+.kynang {
+  padding: 70px 10%;
+  background-color: #f4f8ff;
+}
+
+.kynang h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2563eb;
+}
+
+.noidung-kynang {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.the-kynang {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.the-kynang h3 {
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.the-kynang:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.duan {
+  padding: 70px 10%;
+  background-color: white;
+}
+
+.duan h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2563eb;
+}
+
+.noidung-duan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.the-duan {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.the-duan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.the-duan h3 {
+  padding: 15px 20px 10px;
+  color: #2563eb;
+}
+
+.the-duan p {
+  padding: 0 20px 20px;
+  line-height: 1.5;
+}
+
+.the-duan a {
+  display: inline-block;
+  margin: 0 20px 20px;
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.the-duan a:hover {
+  background-color: #1d4ed8;
+}
+
+.the-duan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.lienhe {
+  padding: 70px 10%;
+  background-color: #f4f8ff;
+}
+
+.noidung-lienhe {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lienhe h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.lienhe .mo-ta {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.gui-lienhe .form-group {
+  margin-bottom: 20px;
+}
+
+.gui-lienhe label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.gui-lienhe .required {
+  color: #ef4444;
+}
+
+.gui-lienhe input[type="text"],
+.gui-lienhe input[type="email"],
+.gui-lienhe input[type="tel"],
+.gui-lienhe textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: 0.3s;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#charCount {
+  text-align: right;
+  color: gray;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.gui-lienhe input:focus,
+.gui-lienhe textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.nut-gui {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nut-gui:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+#darkModeBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark .header,
+.dark .gioithieu,
+.dark .kynang,
+.dark .duan,
+.dark .lienhe {
+  background-color: #2b2b2b;
+}
+
+.dark .the-kynang,
+.dark .the-duan,
+.dark .noidung-lienhe {
+  background-color: #333;
+  color: white;
+}
+
+.dark .lienhe h2,
+.dark .kynang h2,
+.dark .duan h2,
+.dark .noidung-gioithieu h3 {
+  color: #60a5fa;
+}
+
+.dark .mo-ta,
+.dark .thongtin-gioithieu p,
+.dark .noidung-gioithieu p {
+  color: #d1d5db;
+}
+
+.dark .gui-lienhe label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.dark .required {
+  color: #ff4d4d;
+}
+
+.dark .gui-lienhe input[type="text"],
+.dark .gui-lienhe input[type="email"],
+.dark .gui-lienhe input[type="tel"],
+.dark .gui-lienhe textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.dark .gui-lienhe input::placeholder,
+.dark .gui-lienhe textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.dark .gui-lienhe input:focus,
+.dark .gui-lienhe textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+.dark #charCount {
+  color: #d1d5db;
+}
+
+.dark .nut-gui {
+  background-color: #2563eb;
+  color: white;
+}
+
+.dark .nut-gui:hover {
+  background-color: #1d4ed8;
+}
